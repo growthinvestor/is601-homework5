@@ -1,156 +1,65 @@
-# IS-601 Homework 4
+(myenv) ajaswal@AJ:~/projects/homework5$ python main.py
 
-# Performed Testing Using Test Data and User Inputs
+Options:
+1. Add
+2. Subtract
+3. Multiply (using plugin)
+4. Divide (using plugin)
+5. Modulus
+6. Exponentiate
+7. Exit
+Choose an option (1-7): 1
+Enter the first number: 4
+Enter the second number: 707
+Result: 711
 
-# Added additional functions Modulus and Exponentiate both are test successfully 
+Options:
+1. Add
+2. Subtract
+3. Multiply (using plugin)
+4. Divide (using plugin)
+5. Modulus
+6. Exponentiate
+7. Exit
+Choose an option (1-7): 3
+Enter the first number: 10
+Enter the second number: 9
+Result: 90
 
-# Cleared all errors and fixed issues
+Options:
+1. Add
+2. Subtract
+3. Multiply (using plugin)
+4. Divide (using plugin)
+5. Modulus
+6. Exponentiate
+7. Exit
+Choose an option (1-7): 5
+Enter the first number: 7
+Enter the second number: 9
+Result: 7
 
-(myenv) ajaswal@AJ:~/projects/homework4$ pytest --num_records=100
-================================================= test session starts =================================================
-platform linux -- Python 3.10.12, pytest-8.2.0, pluggy-1.5.0 -- /home/ajaswal/projects/homework3/myenv/bin/python3
-cachedir: .pytest_cache
-rootdir: /home/ajaswal/projects/homework4
-configfile: pytest.ini
-testpaths: tests
-plugins: Faker-30.1.0, pylint-0.21.0, cov-5.0.0
-collected 136 items                                                                                                   
+Options:
+1. Add
+2. Subtract
+3. Multiply (using plugin)
+4. Divide (using plugin)
+5. Modulus
+6. Exponentiate
+7. Exit
+Choose an option (1-7): 6
+Enter the base: 45
+Enter the exponent: 4
+Result: 4100625
 
-tests/test_calculation.py::test_calculation_operations[a0-b0-add-expected0] PASSED                              [  0%]
-tests/test_calculation.py::test_calculation_operations[a1-b1-divide-expected1] PASSED                           [  1%]
-tests/test_calculation.py::test_calculation_operations[a2-b2-modulus-expected2] PASSED                          [  2%]
-tests/test_calculation.py::test_calculation_operations[a3-b3-modulus-expected3] PASSED                          [  2%]
-tests/test_calculation.py::test_calculation_operations[a4-b4-multiply-expected4] PASSED                         [  3%]
-tests/test_calculation.py::test_calculation_operations[a5-b5-subtract-expected5] PASSED                         [  4%]
-tests/test_calculation.py::test_calculation_operations[a6-b6-exponentiate-expected6] PASSED                     [  5%]
-tests/test_calculation.py::test_calculation_operations[a7-b7-multiply-expected7] PASSED                         [  5%]
-tests/test_calculation.py::test_calculation_operations[a8-b8-multiply-expected8] PASSED                         [  6%]
-tests/test_calculation.py::test_calculation_operations[a9-b9-add-expected9] PASSED                              [  7%]
-tests/test_calculation.py::test_calculation_operations[a10-b10-subtract-expected10] PASSED                      [  8%]
-tests/test_calculation.py::test_calculation_operations[a11-b11-modulus-expected11] PASSED                       [  8%]
-tests/test_calculation.py::test_calculation_operations[a12-b12-modulus-expected12] PASSED                       [  9%]
-tests/test_calculation.py::test_calculation_operations[a13-b13-subtract-expected13] PASSED                      [ 10%]
-tests/test_calculation.py::test_calculation_operations[a14-b14-divide-expected14] PASSED                        [ 11%]
-tests/test_calculation.py::test_calculation_operations[a15-b15-exponentiate-expected15] PASSED                  [ 11%]
-tests/test_calculation.py::test_calculation_operations[a16-b16-divide-expected16] PASSED                        [ 12%]
-tests/test_calculation.py::test_calculation_operations[a17-b17-subtract-expected17] PASSED                      [ 13%]
-tests/test_calculation.py::test_calculation_operations[a18-b18-multiply-expected18] PASSED                      [ 13%]
-tests/test_calculation.py::test_calculation_operations[a19-b19-divide-expected19] PASSED                        [ 14%]
-tests/test_calculation.py::test_calculation_operations[a20-b20-divide-expected20] PASSED                        [ 15%]
-tests/test_calculation.py::test_calculation_operations[a21-b21-modulus-expected21] PASSED                       [ 16%]
-tests/test_calculation.py::test_calculation_operations[a22-b22-multiply-expected22] PASSED                      [ 16%]
-tests/test_calculation.py::test_calculation_operations[a23-b23-divide-expected23] PASSED                        [ 17%]
-tests/test_calculation.py::test_calculation_operations[a24-b24-multiply-expected24] PASSED                      [ 18%]
-tests/test_calculation.py::test_calculation_operations[a25-b25-divide-expected25] PASSED                        [ 19%]
-tests/test_calculation.py::test_calculation_operations[a26-b26-divide-expected26] PASSED                        [ 19%]
-tests/test_calculation.py::test_calculation_operations[a27-b27-subtract-expected27] PASSED                      [ 20%]
-tests/test_calculation.py::test_calculation_operations[a28-b28-divide-expected28] PASSED                        [ 21%]
-tests/test_calculation.py::test_calculation_operations[a29-b29-add-expected29] PASSED                           [ 22%]
-tests/test_calculation.py::test_calculation_operations[a30-b30-exponentiate-expected30] PASSED                  [ 22%]
-tests/test_calculation.py::test_calculation_operations[a31-b31-divide-expected31] PASSED                        [ 23%]
-tests/test_calculation.py::test_calculation_operations[a32-b32-add-expected32] PASSED                           [ 24%]
-tests/test_calculation.py::test_calculation_operations[a33-b33-multiply-expected33] PASSED                      [ 25%]
-tests/test_calculation.py::test_calculation_operations[a34-b34-exponentiate-expected34] PASSED                  [ 25%]
-tests/test_calculation.py::test_calculation_operations[a35-b35-add-expected35] PASSED                           [ 26%]
-tests/test_calculation.py::test_calculation_operations[a36-b36-divide-expected36] PASSED                        [ 27%]
-tests/test_calculation.py::test_calculation_operations[a37-b37-exponentiate-expected37] PASSED                  [ 27%]
-tests/test_calculation.py::test_calculation_operations[a38-b38-exponentiate-expected38] PASSED                  [ 28%]
-tests/test_calculation.py::test_calculation_operations[a39-b39-divide-expected39] PASSED                        [ 29%]
-tests/test_calculation.py::test_calculation_operations[a40-b40-exponentiate-expected40] PASSED                  [ 30%]
-tests/test_calculation.py::test_calculation_operations[a41-b41-subtract-expected41] PASSED                      [ 30%]
-tests/test_calculation.py::test_calculation_operations[a42-b42-modulus-expected42] PASSED                       [ 31%]
-tests/test_calculation.py::test_calculation_operations[a43-b43-exponentiate-expected43] PASSED                  [ 32%]
-tests/test_calculation.py::test_calculation_operations[a44-b44-subtract-expected44] PASSED                      [ 33%]
-tests/test_calculation.py::test_calculation_operations[a45-b45-multiply-expected45] PASSED                      [ 33%]
-tests/test_calculation.py::test_calculation_operations[a46-b46-modulus-expected46] PASSED                       [ 34%]
-tests/test_calculation.py::test_calculation_operations[a47-b47-exponentiate-expected47] PASSED                  [ 35%]
-tests/test_calculation.py::test_calculation_operations[a48-b48-divide-expected48] PASSED                        [ 36%]
-tests/test_calculation.py::test_calculation_operations[a49-b49-add-expected49] PASSED                           [ 36%]
-tests/test_calculation.py::test_calculation_operations[a50-b50-subtract-expected50] PASSED                      [ 37%]
-tests/test_calculation.py::test_calculation_operations[a51-b51-modulus-expected51] PASSED                       [ 38%]
-tests/test_calculation.py::test_calculation_operations[a52-b52-subtract-expected52] PASSED                      [ 38%]
-tests/test_calculation.py::test_calculation_operations[a53-b53-exponentiate-expected53] PASSED                  [ 39%]
-tests/test_calculation.py::test_calculation_operations[a54-b54-add-expected54] PASSED                           [ 40%]
-tests/test_calculation.py::test_calculation_operations[a55-b55-modulus-expected55] PASSED                       [ 41%]
-tests/test_calculation.py::test_calculation_operations[a56-b56-modulus-expected56] PASSED                       [ 41%]
-tests/test_calculation.py::test_calculation_operations[a57-b57-divide-expected57] PASSED                        [ 42%]
-tests/test_calculation.py::test_calculation_operations[a58-b58-exponentiate-expected58] PASSED                  [ 43%]
-tests/test_calculation.py::test_calculation_operations[a59-b59-subtract-expected59] PASSED                      [ 44%]
-tests/test_calculation.py::test_calculation_operations[a60-b60-exponentiate-expected60] PASSED                  [ 44%]
-tests/test_calculation.py::test_calculation_operations[a61-b61-exponentiate-expected61] PASSED                  [ 45%]
-tests/test_calculation.py::test_calculation_operations[a62-b62-add-expected62] PASSED                           [ 46%]
-tests/test_calculation.py::test_calculation_operations[a63-b63-add-expected63] PASSED                           [ 47%]
-tests/test_calculation.py::test_calculation_operations[a64-b64-exponentiate-expected64] PASSED                  [ 47%]
-tests/test_calculation.py::test_calculation_operations[a65-b65-divide-expected65] PASSED                        [ 48%]
-tests/test_calculation.py::test_calculation_operations[a66-b66-subtract-expected66] PASSED                      [ 49%]
-tests/test_calculation.py::test_calculation_operations[a67-b67-subtract-expected67] PASSED                      [ 50%]
-tests/test_calculation.py::test_calculation_operations[a68-b68-subtract-expected68] PASSED                      [ 50%]
-tests/test_calculation.py::test_calculation_operations[a69-b69-add-expected69] PASSED                           [ 51%]
-tests/test_calculation.py::test_calculation_operations[a70-b70-divide-expected70] PASSED                        [ 52%]
-tests/test_calculation.py::test_calculation_operations[a71-b71-modulus-expected71] PASSED                       [ 52%]
-tests/test_calculation.py::test_calculation_operations[a72-b72-add-expected72] PASSED                           [ 53%]
-tests/test_calculation.py::test_calculation_operations[a73-b73-add-expected73] PASSED                           [ 54%]
-tests/test_calculation.py::test_calculation_operations[a74-b74-modulus-expected74] PASSED                       [ 55%]
-tests/test_calculation.py::test_calculation_operations[a75-b75-divide-expected75] PASSED                        [ 55%]
-tests/test_calculation.py::test_calculation_operations[a76-b76-add-expected76] PASSED                           [ 56%]
-tests/test_calculation.py::test_calculation_operations[a77-b77-multiply-expected77] PASSED                      [ 57%]
-tests/test_calculation.py::test_calculation_operations[a78-b78-exponentiate-expected78] PASSED                  [ 58%]
-tests/test_calculation.py::test_calculation_operations[a79-b79-modulus-expected79] PASSED                       [ 58%]
-tests/test_calculation.py::test_calculation_operations[a80-b80-add-expected80] PASSED                           [ 59%]
-tests/test_calculation.py::test_calculation_operations[a81-b81-divide-expected81] PASSED                        [ 60%]
-tests/test_calculation.py::test_calculation_operations[a82-b82-divide-expected82] PASSED                        [ 61%]
-tests/test_calculation.py::test_calculation_operations[a83-b83-modulus-expected83] PASSED                       [ 61%]
-tests/test_calculation.py::test_calculation_operations[a84-b84-subtract-expected84] PASSED                      [ 62%]
-tests/test_calculation.py::test_calculation_operations[a85-b85-divide-expected85] PASSED                        [ 63%]
-tests/test_calculation.py::test_calculation_operations[a86-b86-divide-expected86] PASSED                        [ 63%]
-tests/test_calculation.py::test_calculation_operations[a87-b87-modulus-expected87] PASSED                       [ 64%]
-tests/test_calculation.py::test_calculation_operations[a88-b88-multiply-expected88] PASSED                      [ 65%]
-tests/test_calculation.py::test_calculation_operations[a89-b89-add-expected89] PASSED                           [ 66%]
-tests/test_calculation.py::test_calculation_operations[a90-b90-modulus-expected90] PASSED                       [ 66%]
-tests/test_calculation.py::test_calculation_operations[a91-b91-exponentiate-expected91] PASSED                  [ 67%]
-tests/test_calculation.py::test_calculation_operations[a92-b92-add-expected92] PASSED                           [ 68%]
-tests/test_calculation.py::test_calculation_operations[a93-b93-multiply-expected93] PASSED                      [ 69%]
-tests/test_calculation.py::test_calculation_operations[a94-b94-add-expected94] PASSED                           [ 69%]
-tests/test_calculation.py::test_calculation_operations[a95-b95-add-expected95] PASSED                           [ 70%]
-tests/test_calculation.py::test_calculation_operations[a96-b96-add-expected96] PASSED                           [ 71%]
-tests/test_calculation.py::test_calculation_operations[a97-b97-exponentiate-expected97] PASSED                  [ 72%]
-tests/test_calculation.py::test_calculation_operations[a98-b98-multiply-expected98] PASSED                      [ 72%]
-tests/test_calculation.py::test_calculation_operations[a99-b99-modulus-expected99] PASSED                       [ 73%]
-tests/test_calculation.py::test_find_by_operation PASSED                                                        [ 74%]
-tests/test_calculation.py::test_divide_by_zero PASSED                                                           [ 75%]
-tests/test_calculation.py::test_modulus_operation PASSED                                                        [ 75%]
-tests/test_calculation.py::test_exponentiate_operation PASSED                                                   [ 76%]
-tests/test_calculations.py::test_add_calculation PASSED                                                         [ 77%]
-tests/test_calculations.py::test_get_history PASSED                                                             [ 77%]
-tests/test_calculations.py::test_clear_history PASSED                                                           [ 78%]
-tests/test_calculations.py::test_get_latest PASSED                                                              [ 79%]
-tests/test_calculations.py::test_find_by_operation PASSED                                                       [ 80%]
-tests/test_calculations.py::test_get_latest_with_empty_history PASSED                                           [ 80%]
-tests/test_calculator.py::test_addition PASSED                                                                  [ 81%]
-tests/test_calculator.py::test_subtraction PASSED                                                               [ 82%]
-tests/test_calculator.py::test_multiply PASSED                                                                  [ 83%]
-tests/test_calculator.py::test_divide PASSED                                                                    [ 83%]
-tests/test_calculator.py::test_exponentiation PASSED                                                            [ 84%]
-tests/test_calculator.py::test_modulus PASSED                                                                   [ 85%]
-tests/test_main.py::test_calculate_and_print[5-3-add-The result of 5 add 3 is equal to 8] PASSED                [ 86%]
-tests/test_main.py::test_calculate_and_print[10-2-subtract-The result of 10 subtract 2 is equal to 8] PASSED    [ 86%]
-tests/test_main.py::test_calculate_and_print[4-5-multiply-The result of 4 multiply 5 is equal to 20] PASSED     [ 87%]
-tests/test_main.py::test_calculate_and_print[20-4-divide-The result of 20 divide 4 is equal to 5] PASSED        [ 88%]
-tests/test_main.py::test_calculate_and_print[1-1-divide-The result of 1 divide 1 is equal to 1] PASSED          [ 88%]
-tests/test_main.py::test_calculate_and_print[1-0-divide-An error occurred: Cannot divide by zero.] PASSED       [ 89%]
-tests/test_main.py::test_calculate_and_print[9-3-modulus-The result of 9 modulus 3 is equal to 0] PASSED        [ 90%]
-tests/test_main.py::test_calculate_and_print[10-3-modulus-The result of 10 modulus 3 is equal to 1] PASSED      [ 91%]
-tests/test_main.py::test_calculate_and_print[2-3-exponentiate-The result of 2 exponentiate 3 is equal to 8] PASSED [ 91%]
-tests/test_main.py::test_calculate_and_print[3-0-exponentiate-The result of 3 exponentiate 0 is equal to 1] PASSED [ 92%]
-tests/test_main.py::test_calculate_and_print[9-3-unknown-Unknown operation: unknown.] PASSED                    [ 93%]
-tests/test_main.py::test_calculate_and_print[a-3-add-Invalid number input: a or 3 is not a valid number.] PASSED [ 94%]
-tests/test_main.py::test_calculate_and_print[5-b-subtract-Invalid number input: 5 or b is not a valid number.] PASSED [ 94%]
-tests/test_operations.py::test_operation_add PASSED                                                             [ 95%]
-tests/test_operations.py::test_operation_subtract PASSED                                                        [ 96%]
-tests/test_operations.py::test_operation_multiply PASSED                                                        [ 97%]
-tests/test_operations.py::test_operation_divide PASSED                                                          [ 97%]
-tests/test_operations.py::test_divide_by_zero PASSED                                                            [ 98%]
-tests/test_operations.py::test_operation_modulus PASSED                                                         [ 99%]
-tests/test_operations.py::test_operation_exponentiation PASSED                                                  [100%]
-
-================================================= 136 passed in 0.11s ================================================
+Options:
+1. Add
+2. Subtract
+3. Multiply (using plugin)
+4. Divide (using plugin)
+5. Modulus
+6. Exponentiate
+7. Exit
+Choose an option (1-7): 7
+Exiting the calculator. Goodbye!
+(myenv) ajaswal@AJ:~/projects/homework5$ 
