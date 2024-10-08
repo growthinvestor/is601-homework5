@@ -11,16 +11,25 @@ def calculate_and_print(a_string=None, b_string=None, operation_string=None):
 
             # Creating commands based on the operation
             if operation_string == 'add':
+                calc.load_plugin('add_plugin')  # Ensure plugin is loaded for addition
                 command = AddCommand(a, b)
             elif operation_string == 'subtract':
                 command = SubtractCommand(a, b)
             elif operation_string == 'multiply':
+                calc.load_plugin('multiply_plugin')  # Ensure plugin is loaded
                 command = calc.create_command('multiply_plugin', a, b)
+                if command is None:
+                    print(f"Failed to create multiply command for a={a}, b={b}.")
+                    return
             elif operation_string == 'divide':
                 if b == 0:
                     print("An error occurred: Cannot divide by zero.")
                     return
+                calc.load_plugin('divide_plugin')  # Ensure plugin is loaded
                 command = calc.create_command('divide_plugin', a, b)
+                if command is None:
+                    print(f"Failed to create divide command for a={a}, b={b}.")
+                    return
             elif operation_string == 'modulus':
                 command = ModulusCommand(a, b)
             elif operation_string == 'exponentiate':
@@ -68,22 +77,28 @@ def calculate_and_print(a_string=None, b_string=None, operation_string=None):
                 print(f"Result: {result_str}")
 
             elif choice == '3':
-                calc.load_plugin('multiply_plugin')
+                calc.load_plugin('multiply_plugin')  # Ensure plugin is loaded
                 a = float(input("Enter the first number: "))
                 b = float(input("Enter the second number: "))
                 multiply_command = calc.create_command('multiply_plugin', a, b)
+                if multiply_command is None:
+                    print(f"Failed to create multiply command for a={a}, b={b}.")
+                    continue
                 result = calc.compute(multiply_command)
                 result_str = f"{result:.0f}" if result.is_integer() else str(result)
                 print(f"Result: {result_str}")
 
             elif choice == '4':
-                calc.load_plugin('divide_plugin')
+                calc.load_plugin('divide_plugin')  # Ensure plugin is loaded
                 a = float(input("Enter the first number: "))
                 b = float(input("Enter the second number: "))
                 if b == 0:
                     print("An error occurred: Cannot divide by zero.")
                     continue
                 divide_command = calc.create_command('divide_plugin', a, b)
+                if divide_command is None:
+                    print(f"Failed to create divide command for a={a}, b={b}.")
+                    continue
                 result = calc.compute(divide_command)
                 result_str = f"{result:.0f}" if result.is_integer() else str(result)
                 print(f"Result: {result_str}")

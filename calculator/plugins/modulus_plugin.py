@@ -7,3 +7,6 @@ class ModulusCommand(Command):
 
     def execute(self):
         return self.a % self.b
+
+def register():
+    return ModulusCommand

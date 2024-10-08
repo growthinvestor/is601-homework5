@@ -1,16 +1,14 @@
 from decimal import Decimal
 from typing import Callable
-from calculator.operations import add, subtract, multiply, divide
+from calculator.operations import add, subtract, multiply, divide, exponentiate, modulus
 
 # Definition of the Calculation class with type annotations for improved readability and safety
 class Calculation:
     # Constructor method with type hints for parameters and the return type
     def __init__(self, a: Decimal, b: Decimal, operation: Callable[[Decimal, Decimal], Decimal]):
-       
+        self.operation = operation 
         self.a = a
         self.b = b
-        self.operation = operation #Store the operation
-    
     
     # This method provides an alternative constructor that can be used without instantiating the class directly
     @staticmethod    
