@@ -1,3 +1,8 @@
+# IS-601 Homework 5
+# Performed Testing Using input data, plugins and commands
+# Added additional functions Modulus and Exponentiate both are test successfully
+# Cleared all errors and fixed issues
+
 (myenv) ajaswal@AJ:~/projects/homework5$ python main.py
 
 Options:
